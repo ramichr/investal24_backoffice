@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="DE">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +27,7 @@
     <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar-logo">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="./images/logo.png" alt="Protend logo">
             </a>
             <div class="sidebar-close" id="sidebar-close">
@@ -41,7 +38,7 @@
         <div class="simlebar-sc" data-simplebar>
             <ul class="sidebar-menu tf">
                 <li class="sidebar-submenu">
-                    <a href="index.html" class="sidebar-menu-dropdown">
+                    <a href="index.php" class="sidebar-menu-dropdown">
                         <i class='bx bxs-home'></i>
                         <span>Dashboard</span>
                    
@@ -49,7 +46,7 @@
                  
                 </li>
                 <li class="sidebar-submenu">
-                    <a href="project.html" class="sidebar-menu-dropdown">
+                    <a href="#" class="sidebar-menu-dropdown">
                         <i class='bx bxs-bolt'></i>
                         <span>Vertrieb</span>
                         <div class="dropdown-icon"><i class='bx bx-chevron-down'></i></div>
@@ -57,12 +54,12 @@
                     <ul class="sidebar-menu sidebar-menu-dropdown-content">
                         
                         <li>
-                            <a href="project-details.html">
-                                Händler Verwaltung
+                            <a href="Gesch.php">
+                                Geschäftskunden Verwaltung
                             </a>
                         </li>
                         <li>
-                            <a href="new-project.html">
+                            <a href="vermit.php">
                                 Vermittler Verwaltung
                             </a>
                         </li>
@@ -70,14 +67,14 @@
                 </li>
 
                 <li class="sidebar-submenu">
-                    <a href="clients.html" class="sidebar-menu-dropdown">
+                    <a href="#" class="sidebar-menu-dropdown">
                         <i class='bx bxs-user'></i>
                         <span>Kunden</span>
                         <div class="dropdown-icon"><i class='bx bx-chevron-down'></i></div>
                     </a>
                     <ul class="sidebar-menu sidebar-menu-dropdown-content">
                         <li>
-                            <a href="clients.html">
+                            <a href="clients.php">
                                Kunden Verwaltung
                             </a>
                         </li>
@@ -86,20 +83,20 @@
                 </li>
 
                 <li class="sidebar-submenu">
-                    <a href="clients.html" class="sidebar-menu-dropdown">
+                    <a href="#" class="sidebar-menu-dropdown">
                         <i class='bx bxs-bell-ring'></i>
                         <span>Goldankauf</span>
                         <div class="dropdown-icon"><i class='bx bx-chevron-down'></i></div>
                     </a>
                     <ul class="sidebar-menu sidebar-menu-dropdown-content">
                         <li>
-                            <a href="clients.html">
+                            <a href="Privatanf.php">
                                 Privatkunden Anfrage
                             </a>
                         </li>
 
                         <li>
-                            <a href="clients.html">
+                            <a href="GeschAnf.php">
                                 Geschäftskunden Anfrage
                             </a>
                         </li>
@@ -108,19 +105,19 @@
                 </li>
 
                 <li class="sidebar-submenu">
-                    <a href="clients.html" class="sidebar-menu-dropdown">
+                    <a href="#" class="sidebar-menu-dropdown">
                         <i class='bx bxs-area'></i>
                         <span>Website Investal24</span>
                         <div class="dropdown-icon"><i class='bx bx-chevron-down'></i></div>
                     </a>
                     <ul class="sidebar-menu sidebar-menu-dropdown-content">
                         <li>
-                            <a href="clients.html">
+                            <a href="Web.php">
                                Seiten & Text verwalten
                             </a>
                         </li>
                         <li>
-                            <a href="client-details.html">
+                            <a href="Rechner.php">
                                 Rechner 
                             </a>
                         </li>
@@ -128,19 +125,19 @@
                 </li>
 
                 <li class="sidebar-submenu">
-                    <a href="clients.html" class="sidebar-menu-dropdown">
+                    <a href="#" class="sidebar-menu-dropdown">
                         <i class='bx bxs-shopping-bag'></i>
                         <span>Shop</span>
                         <div class="dropdown-icon"><i class='bx bx-chevron-down'></i></div>
                     </a>
                     <ul class="sidebar-menu sidebar-menu-dropdown-content">
                         <li>
-                            <a href="clients.html">
+                            <a href="new-produkt.php">
                                Produkt hinzufügen
                             </a>
                         </li>
                         <li>
-                            <a href="client-details.html">
+                            <a href="produkt-show.php">
                                 Produkt anzeigen 
                             </a>
                         </li>
@@ -217,7 +214,7 @@
                     <a class="dropdown-item d-block" href="#"><i class="bx bx-wrench font-size-16 align-middle me-1"></i> <span>Einstellungen</span></a>
                     <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span>Sperre</span></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="user-login.html"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span>Abmelden</span></a>
+                    <a class="dropdown-item text-danger" href="login.php"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span>Abmelden</span></a>
                 </div>
             </div>
         </div>
