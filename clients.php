@@ -69,6 +69,7 @@ $result = mysqli_query($conn, $sql);
       while ($kunde = mysqli_fetch_assoc($result)) { ?>
       <div class="col-3 col-md-6 col-sm-12 mb-25">
         <form action="./client-details.php" method="GET" class="box client">
+          <input type="hidden" name="kundenId" value="<?= $kunde['kundenId'] ?>">
           <input type="hidden" name="username" value="<?= $kunde['username'] ?>">
           <input type="hidden" name="vorname" value="<?= $kunde['vorname'] ?>">
           <input type="hidden" name="nachname" value="<?= $kunde['nachname'] ?>">
