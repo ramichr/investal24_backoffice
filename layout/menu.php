@@ -65,6 +65,16 @@
                 Vermittler Verwaltung
               </a>
             </li>
+            <li>
+              <a href="rechnung.php">
+                Rechnung Verwalten
+              </a>
+            </li>
+            <li>
+              <a href="fix.php">
+                Fixierung
+              </a>
+            </li>
           </ul>
         </li>
 
