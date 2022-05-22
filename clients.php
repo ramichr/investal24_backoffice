@@ -76,7 +76,7 @@ $result = mysqli_query($conn, $sql);
           <input type="hidden" name="email" value="<?= $kunde['email'] ?>">
           <input type="hidden" name="telefonnummer" value="<?= $kunde['telefonnummer'] ?>">
           <input type="hidden" name="geschlecht" value="<?= $kunde['geschlecht'] ?>">
-          <input type="hidden" name="addresse" value="<?= $kunde['addresse'] ?>">
+          <input type="hidden" name="adresse" value="<?= $kunde['adresse'] ?>">
           <input type="hidden" name="plz" value="<?= $kunde['plz'] ?>">
           <input type="hidden" name="stadt" value="<?= $kunde['stadt'] ?>">
 
@@ -102,7 +102,7 @@ $result = mysqli_query($conn, $sql);
 
             <p class="fs-14 font-w400 font-main">Adresse:
               <span class="text-clo-primary font-w500 pl-4">
-                <?= $kunde['addresse'] . ' ,' . $kunde['plz'] . ' ' . $kunde['stadt'] ?>
+                <?= $kunde['adresse'] . ' ,' . $kunde['plz'] . ' ' . $kunde['stadt'] ?>
               </span>
             </p>
             <ul class="info">

@@ -8,7 +8,7 @@ if (isset($_GET['submit'])) {
   $email =  $_GET['email'];
   $telefonnummer = $_GET['telefonnummer'];
   $geschlecht = $_GET['geschlecht'];
-  $addresse = $_GET['addresse'];
+  $adresse = $_GET['adresse'];
   $plz = $_GET['plz'];
   $stadt = $_GET['stadt'];
 }
@@ -343,7 +343,7 @@ $result2 = mysqli_query($conn, $sql2);
                   <tr>
                     <td class="py-2 px-0"> <span class="w-50">Addresse</span> </td>
                     <td>:</td>
-                    <td class="py-2 px-0"> <span class=""><?= $addresse . ', ' . $plz . ' ' . $stadt ?></span> </td>
+                    <td class="py-2 px-0"> <span class=""><?= $adresse . ', ' . $plz . ' ' . $stadt ?></span> </td>
                   </tr>
                   <tr>
                     <td class="py-2 px-0"> <span class="w-50">Status</span> </td>
