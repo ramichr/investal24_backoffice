@@ -1,4 +1,5 @@
 <?php
+
 $gKundenId = $_GET['gKundenId'];
 $gkUsername = $_GET['gkUsername'];
 $gkPasswort = $_GET['gkPasswort'];
@@ -21,14 +22,17 @@ include 'functions.inc.php';
 
 if (isset($_GET['accept'])) {
   updateGK($conn, $gKundenId, $gkBonusProzent);
-  sendEmail($gkEmail, "
-  $gkUsername
+  sendEmail($gkEmail, "Ihre Geschäftkunde Antrag", "
+  Ihre Username: $gkUsername. <br>
+  Ihre Passwort: $gkPasswort.
   ");
-  echo "accept";
+  header("Location: ../Gesch.php");
+  exit();
 } elseif (isset($_GET['decline'])) {
   deleteGK($conn, $gKundenId);
-  sendEmail($gkEmail, "
-  $gkUsername
+  sendEmail($gkEmail, "Ihre Geschäftkunde Antrag", "
+  Leider Ihre Antrag wurde abgelehnt.
   ");
-  echo "decline";
+  header("Location: ../Gesch.php");
+  exit();
 }

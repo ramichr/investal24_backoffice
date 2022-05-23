@@ -30,7 +30,7 @@ function deleteGK($conn, $gKundenId)
 };
 
 
-function sendEmail($gkEmail, $email_message,)
+function sendEmail($gkEmail, $email_subject, $email_message,)
 {
 
   $mail = new PHPMailer(true);
@@ -54,7 +54,7 @@ function sendEmail($gkEmail, $email_message,)
 
   //Content
   $mail->isHTML(true);                                  //Set email format to HTML
-  $mail->Subject = 'Ihre Username';
+  $mail->Subject = $email_subject;
   $mail->Body = $email_message;
   $mail->send();
 };
