@@ -55,8 +55,6 @@ $result = mysqli_query($conn, $sql);
         <input type="hidden" name="gkStadt" value="<?= $gkStadt ?>">
         <input type="hidden" name="gkEmail" value="<?= $gkEmail ?>">
         <input type="hidden" name="gkTelefonnummer" value="<?= $gkTelefonnummer ?>">
-        <input type="hidden" name="gkBonusProzent" value="<?= $gkBonusProzent ?>">
-        <input type="hidden" name="gkBonusEUR" value="<?= $gkBonusEUR ?>">
         <div class="col-4 col-xl-12">
           <div class="box left-dot mb-30">
             <div class="box-header  border-0 pd-0">
@@ -100,7 +98,7 @@ $result = mysqli_query($conn, $sql);
                       <td class="py-2 px-0"> <span class="w-50">Bonus</span> </td>
                       <td>:</td>
                       <td class="py-2 px-0">
-                        <select class="form-control select">
+                        <select name="gkBonusProzent" class="form-control select">
                           <option>Prozent eingeben</option>
                           <option value="10">10%</option>
                           <option value="15">15%</option>

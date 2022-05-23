@@ -11,9 +11,9 @@ require_once './PHPmailer/SMTP.php';
 /* ----------------------------------------------------------------------------------------------- */
 
 
-function updateGK($conn, $gKundenId)
+function updateGK($conn, $gKundenId, $gkBonusProzent)
 {
-  $sql = "UPDATE `gKunden` SET `gkBonusProzent` = 10 WHERE gKundenId = '$gKundenId';";
+  $sql = "UPDATE `gKunden` SET `gkBonusProzent` = '$gkBonusProzent' WHERE gKundenId = '$gKundenId';";
 
   $result = mysqli_query($conn, $sql);
 

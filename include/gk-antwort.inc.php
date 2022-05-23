@@ -14,13 +14,13 @@ $gkStadt = $_GET['gkStadt'];
 $gkEmail = $_GET['gkEmail'];
 $gkTelefonnummer = $_GET['gkTelefonnummer'];
 $gkBonusProzent = $_GET['gkBonusProzent'];
-$gkBonusEUR = $_GET['gkBonusEUR'];
+// $gkBonusEUR = $_GET['gkBonusEUR'];
 
 include 'dbh.inc.php';
 include 'functions.inc.php';
 
 if (isset($_GET['accept'])) {
-  updateGK($conn, $gKundenId);
+  updateGK($conn, $gKundenId, $gkBonusProzent);
   sendEmail($gkEmail, "
   $gkUsername
   ");
