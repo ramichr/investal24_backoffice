@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -214,8 +218,8 @@
           <img class="rounded-circle header-profile-user" src="./images/profile/profile.png" alt="Header Avatar">
           <span class="pulse-css"></span>
           <span class="info d-xl-inline-block  color-span">
-            <span class="d-block fs-20 font-w600">Hammadi Elloumi</span>
-            <span class="d-block mt-7">h.elloumi@konzept-fabrik.com</span>
+            <span class="d-block fs-20 font-w600"><?= $_SESSION["vorname"] . ' ' . $_SESSION["nachname"] ?></span>
+            <span class="d-block mt-7"><?= $_SESSION["email"] ?></span>
           </span>
 
           <i class='bx bx-chevron-down'></i>

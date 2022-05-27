@@ -30,6 +30,9 @@ if (isset($_GET["submit"])) {
         session_start();
         $_SESSION["personalId"] = $row["personalId"];
         $_SESSION["username"] = $row["username"];
+        $_SESSION["vorname"] = $row["vorname"];
+        $_SESSION["nachname"] = $row["nachname"];
+        $_SESSION["email"] = $row["email"];
         header("location: ../index.php");
       } else {
         header("location: ../login.php?error=wrong_password");
