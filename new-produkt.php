@@ -62,8 +62,8 @@
               <div class="row">
                 <div class="col-md-12 col-sm-12">
                   <div class="form-group"> <label class="form-label">Foto:</label>
-                    <div class="input-group file-browser"> <input type="file" name="image"
-                        class="form-control border-end-0 browse-file" readonly="">
+                    <div class="input-group file-browser"> <input type="file" name="images[]"
+                        class="form-control border-end-0 browse-file" readonly multiple>
                     </div>
                   </div>
                 </div>

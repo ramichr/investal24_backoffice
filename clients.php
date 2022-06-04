@@ -110,7 +110,7 @@ $result = mysqli_query($conn, $sql);
               <li class="fs-14"><i class='bx bxs-envelope'></i><?= $kunde['email'] ?></li>
             </ul>
             <div class="group-btn d-flex justify-content-between">
-              <input type="submit" name="submit" value="Profil ansehen" class="bg-btn-sec color-main">
+              <button type="submit" name="submit" class="search d-flex">Profil ansehen</button>
             </div>
           </div>
 
