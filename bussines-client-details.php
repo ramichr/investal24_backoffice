@@ -55,7 +55,7 @@ $result = mysqli_query($conn, $sql);
         <input type="hidden" name="gkStadt" value="<?= $gkStadt ?>">
         <input type="hidden" name="gkEmail" value="<?= $gkEmail ?>">
         <input type="hidden" name="gkTelefonnummer" value="<?= $gkTelefonnummer ?>">
-        <div class="col-4 col-xl-12">
+        <div class="col-12 col-xl-12">
           <div class="box left-dot mb-30">
             <div class="box-header  border-0 pd-0">
               <div class="box-title fs-20 font-w600">Allgemeine Informationen</div>
