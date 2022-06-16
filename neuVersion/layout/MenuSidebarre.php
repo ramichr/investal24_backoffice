@@ -27,7 +27,7 @@
       </a>
       <ul aria-expanded="false">
         <li><a href="Kundenliste.php">Kunden Liste</a></li>
-        <li><a href="./chart-morris.html">Gäste Liste</a></li>
+        <li><a href="#">Gäste Liste</a></li>
 
       </ul>
     </li>
@@ -46,9 +46,9 @@
         <span class="nav-text">Website Investal24</span>
       </a>
       <ul aria-expanded="false">
-        <li><a href="./uc-select2.html">Seiten & Text verwalten</a></li>
-        <li><a href="./uc-nestable.html">Anlage Rechner</a></li>
-        <li><a href="./uc-noui-slider.html">Spar Rechner </a></li>
+        <li><a href="#">Seiten & Text verwalten</a></li>
+        <li><a href="#">Anlage Rechner</a></li>
+        <li><a href="#">Spar Rechner </a></li>
 
       </ul>
     </li>
@@ -59,10 +59,9 @@
       </a>
       <ul aria-expanded="false">
 
-        <li><a href="./ecom-product-list.html">Produkt List</a></li>
-        <li><a href="./ecom-product-order.html">Shop Bestellungen</a></li>
-        <li><a href="./ecom-invoice.html">Shop Rechnungen</a></li>
-        <li><a href="./ecom-invoice.html">Shop Produkt Hinzufügen </a></li>
+        <li><a href="produktliste.php">Produkt List</a></li>
+        <li><a href="bestellungtabelle.php">Shop Bestellungen</a></li>
+        <li><a href="produkthinzufugen.php">Shop Produkt Hinzufügen </a></li>
       </ul>
     </li>
 

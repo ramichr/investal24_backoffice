@@ -13,8 +13,7 @@ function emailPdf(
   $template,
   $attachment,
   $attachmentName,
-  $page,
-  $script
+  $page
 ) {
   $mail = new PHPMailer(true);
 
@@ -51,6 +50,5 @@ function emailPdf(
   $mail->Body = $template;
   if ($mail->send()) {
     $page;
-    echo $script;
   }
 }

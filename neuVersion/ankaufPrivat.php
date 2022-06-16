@@ -2,15 +2,15 @@
 
 include "includes/dbh.inc.php";
 
-$sql1 = "SELECT * FROM `goldankauf_p` WHERE gastUid != '';";
+$sql1 = "SELECT * FROM `goldankauf_p` WHERE gastUid != '' AND status = 'activ'";
 $result1 = mysqli_query($conn, $sql1);
 
 
-$sql2 = "SELECT * FROM `goldankauf_p` WHERE kundenId != '';";
+$sql2 = "SELECT * FROM `goldankauf_p` WHERE kundenId != '' AND status = 'activ'";
 $result2 = mysqli_query($conn, $sql2);
 
 
-$sql3 = "SELECT * FROM `goldankauf_p` WHERE gKundenId != '';";
+$sql3 = "SELECT * FROM `goldankauf_p` WHERE gKundenId != '' AND status = 'activ'";
 $result3 = mysqli_query($conn, $sql3);
 
 ?>
@@ -95,6 +95,18 @@ $result3 = mysqli_query($conn, $sql3);
               <div class="card-header">
                 <h4 class="card-title">Ankaufgold Liste</h4>
               </div>
+
+              <?php if (isset($_GET['email'])) {
+                if ($_GET['email'] == 'sent') { ?>
+              <br>
+              <br>
+              <div class="block-title text-center">
+                <div class="block-title__decor"></div><!-- /.block-title__decor -->
+                <p style="color: green; text-align: center;">Nachricht gesendet.</p>
+              </div>
+              <?php }
+              } ?>
+
               <div class="card-body">
                 <div class="table-responsive">
                   <table id="example5" class="display min-w850">
