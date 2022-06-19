@@ -78,15 +78,14 @@ $result = mysqli_query($conn, $sql);
                     <div class="col-md-5 col-xxl-12">
                       <div class="new-arrival-product mb-4 mb-xxl-4 mb-md-0">
                         <?php
-                                                    $produktId = $produkt['produktId'];
-                                                    $sql2 = "SELECT `image` 
-                                                    FROM `produkt_images` 
-                                                    WHERE `produktId` = '$produktId' ";
+                          $produktId = $produkt['produktId'];
 
-                                                    $result2 = mysqli_query($conn, $sql2);
+                          $sql2 = "SELECT `image` FROM `produkt_images` WHERE `produktId` = '$produktId'";
 
-                                                    $image = mysqli_fetch_array($result2);
-                                                    ?>
+                          $result2 = mysqli_query($conn, $sql2);
+
+                          $image = mysqli_fetch_array($result2);
+                          ?>
                         <div class="new-arrivals-img-contnent">
                           <img class="img-fluid"
                             src="data:image;charset=utf8;base64,<?= base64_encode($image[0]); ?>" />

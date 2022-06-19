@@ -114,7 +114,8 @@ $result3 = mysqli_query($conn, $sql3);
 
                         <td>
                           <div class="d-flex">
-                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-print"></i></a>
+                            <a href="includes/download.inc.php?file=<?= $row['rechnungId'] ?>" target="_blank"
+                              class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-print"></i></a>
                           </div>
                         </td>
                       </tr>
@@ -130,7 +131,8 @@ $result3 = mysqli_query($conn, $sql3);
 
                         <td>
                           <div class="d-flex">
-                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-print"></i></a>
+                            <a href="includes/download.inc.php?file=<?= $row['rechnungId'] ?>" target="_blank"
+                              class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-print"></i></a>
                           </div>
                         </td>
                       </tr>
@@ -147,7 +149,8 @@ $result3 = mysqli_query($conn, $sql3);
 
                         <td>
                           <div class="d-flex">
-                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-print"></i></a>
+                            <a href="includes/download.inc.php?file=<?= $row['rechnungId'] ?>" target="_blank"
+                              class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-print"></i></a>
                           </div>
                         </td>
                       </tr>
