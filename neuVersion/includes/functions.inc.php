@@ -9,10 +9,18 @@ include "emails/emailPdf.php";
 
 /* ----------------------------------------------------------------------------------------------- */
 
+function test_input($data)
+{
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
 
 function updateGK($conn, $gKundenId, $BonusProzent)
 {
-  $sql = "UPDATE `gKunden` SET `gkBonusProzent` = '$BonusProzent' WHERE gKundenId = '$gKundenId';";
+  $sql = "UPDATE `gKunden` SET `gkBonusProzent` = '$BonusProzent' , `gkStatus` = 'aktiv' WHERE gKundenId = '$gKundenId';";
 
   $result = mysqli_query($conn, $sql);
 

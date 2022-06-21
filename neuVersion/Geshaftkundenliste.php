@@ -1,7 +1,7 @@
 <?php
 include "includes/dbh.inc.php";
 
-$sql = 'SELECT * FROM `gKunden`';
+$sql = 'SELECT * FROM `gKunden` WHERE `gkStatus` = "In_Bearbeitung"';
 
 $result = mysqli_query($conn, $sql);
 
@@ -144,7 +144,7 @@ $result = mysqli_query($conn, $sql);
                             <input type="hidden" name="gkEmail" value="<?= $gKunde['gkEmail'] ?>">
                             <input type="hidden" name="gkTelefonnummer" value="<?= $gKunde['gkTelefonnummer'] ?>">
                             <input type="hidden" name="gkBonusProzent" value="<?= $gKunde['gkBonusProzent'] ?>">
-                            <input type="hidden" name="gkBonusEUR" value="<?= $gKunde['gkBonusEUR'] ?>">
+                            <input type="hidden" name="gkStatus" value="<?= $gKunde['gkStatus'] ?>">
                             <div class="dropdown ml-auto text-right">
                               <div class="btn-link" data-toggle="dropdown">
                                 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">

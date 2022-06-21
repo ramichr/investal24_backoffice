@@ -1,3 +1,27 @@
+<?php
+function test_input($data)
+{
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+$id = test_input($_GET['id']);
+$username = test_input($_GET['username']);
+$vorname = test_input($_GET['vorname']);
+$nachname = test_input($_GET['nachname']);
+$adresse = test_input($_GET['adresse']);
+$plz = test_input($_GET['plz']);
+$stadt = test_input($_GET['stadt']);
+$email = test_input($_GET['email']);
+$telefonnummer = test_input($_GET['telefonnummer']);
+
+
+include "includes/dbh.inc.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,7 +96,7 @@
                       <h5 class="f-w-500">Kunde Name <span class="pull-right">:</span>
                       </h5>
                     </div>
-                    <div class="col-sm-9 col-7"><span>Hammadi Elloumi</span>
+                    <div class="col-sm-9 col-7"><span><?= $vorname . ' ' . $nachname ?></span>
                     </div>
                   </div>
                   <div class="row mb-2">
@@ -81,7 +105,7 @@
                       <h5 class="f-w-500">Kunden ID <span class="pull-right">:</span>
                       </h5>
                     </div>
-                    <div class="col-sm-9 col-7"><span>k-hamell566929</span>
+                    <div class="col-sm-9 col-7"><span><?= $username ?></span>
                     </div>
                   </div>
                   <div class="row mb-2">
@@ -89,29 +113,21 @@
                       <h5 class="f-w-500">Email <span class="pull-right">:</span>
                       </h5>
                     </div>
-                    <div class="col-sm-9 col-7"><span>elloumiha@gmail.com </span>
+                    <div class="col-sm-9 col-7"><span><?= $email ?></span>
                     </div>
                   </div>
                   <div class="row mb-2">
                     <div class="col-sm-3 col-5">
                       <h5 class="f-w-500">Tel Kontakt <span class="pull-right">:</span></h5>
                     </div>
-                    <div class="col-sm-9 col-7"><span>+491727898041</span>
-                    </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-sm-3 col-5">
-                      <h5 class="f-w-500">Geschlecht <span class="pull-right">:</span>
-                      </h5>
-                    </div>
-                    <div class="col-sm-9 col-7"><span>männlich</span>
+                    <div class="col-sm-9 col-7"><span><?= $telefonnummer ?></span>
                     </div>
                   </div>
                   <div class="row mb-2">
                     <div class="col-sm-3 col-5">
                       <h5 class="f-w-500">Addresse <span class="pull-right">:</span></h5>
                     </div>
-                    <div class="col-sm-9 col-7"><span>GruitenerStr 68, 42327 Wuppertal</span>
+                    <div class="col-sm-9 col-7"><span><?= $adresse . ', ' . $plz . ' ' . $stadt ?></span>
                     </div>
                   </div>
 

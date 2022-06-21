@@ -23,7 +23,6 @@ if (isset($_GET['submit'])) {
   $gkEmail = test_input($_GET['gkEmail']);
   $gkTelefonnummer = test_input($_GET['gkTelefonnummer']);
   $gkBonusProzent = test_input($_GET['gkBonusProzent']);
-  $gkBonusEUR = test_input($_GET['gkBonusEUR']);
 }
 
 include "includes/dbh.inc.php";
@@ -344,7 +343,7 @@ $result = mysqli_query($conn, $sql);
                               <input type="hidden" name="gkEmail" value="<?= $gkEmail ?>">
                               <input type="hidden" name="gkTelefonnummer" value="<?= $gkTelefonnummer ?>">
                               <input type="hidden" name="gkBonusProzent" value="<?= $gkBonusProzent ?>">
-                              <input type="hidden" name="gkBonusEUR" value="<?= $gkBonusEUR ?>">
+
                               <div class="form-row">
                                 <div class="form-group col-md-12">
                                   <label>Bonus</label>
