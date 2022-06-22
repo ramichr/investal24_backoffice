@@ -13,7 +13,7 @@ if (isset($_GET['gutschriftErstellen'])) {
   $plz = $_GET['plz'];
   $stadt = $_GET['stadt'];
 
-  $gutschriftNum = "INV-" . mt_rand(1000, 9999);
+  $gutschriftNum = "INV-" . uniqid();
   $gutschriftDatum = date("d.m.Y");
   $lieferdatum = date("d.m.Y", strtotime("+1 days"));
   $fälligkeitdatum = date("d.m.Y", strtotime("+14 days"));
