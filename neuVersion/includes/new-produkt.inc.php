@@ -10,6 +10,9 @@ if (isset($_POST['submit'])) {
   $kategorie = $_POST['kategorie'];
   $zusatzInfos = $_POST['zusatzInfos'];
 
+
+
+
   include "dbh.inc.php";
 
   $sql1 = "INSERT INTO `produkt` (`produktUid`,	`produktName`	, `beschreibung` ,	`referenz` , `inventor` , `gewicht`	,`kategorie` ,`zusatzInfos`	) VALUES ('$produktUid','$produktName','$beschreibung', '$referenz', '$inventor','$gewicht', '$kategorie', '$zusatzInfos')";
