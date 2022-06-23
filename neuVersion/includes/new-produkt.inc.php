@@ -35,6 +35,6 @@ if (isset($_POST['submit'])) {
     mysqli_query($conn, $sql3);
   }
 
-  header("Location: ../produkt-show.php");
+  header("Location: ../produktliste.php");
   exit();
 }

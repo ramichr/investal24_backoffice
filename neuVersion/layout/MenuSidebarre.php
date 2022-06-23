@@ -14,7 +14,7 @@
         <ul aria-expanded="false">
           <li><a href="Geshaftkundenliste.php">Geschäftskunden Anfrage</a></li>
           <li><a href="#">Vermittler Anfrage</a></li>
-          <li><a href="rechnunginvestal.php">Rechnung Verwalten</a></li>
+          <li><a href="rechnunginvestal.php">Rechnung verwalten</a></li>
           <li><a href="FixierungNadir.php">Nadir Fixierung</a></li>
 
       </li>
@@ -23,11 +23,11 @@
     </li>
     <li><a class="has-arrow ai-icon" href="#" aria-expanded="false">
         <i class="flaticon-381-id-card"></i>
-        <span class="nav-text">Kunden Bereich</span>
+        <span class="nav-text">Kundenbereich</span>
       </a>
       <ul aria-expanded="false">
-        <li><a href="Kundenliste.php">Kunden Liste</a></li>
-        <li><a href="#">Gäste Liste</a></li>
+        <li><a href="Kundenliste.php">Kundenliste</a></li>
+        <li><a href="#">Gästeliste</a></li>
 
       </ul>
     </li>
@@ -59,9 +59,9 @@
       </a>
       <ul aria-expanded="false">
 
-        <li><a href="produktliste.php">Produkt List</a></li>
-        <li><a href="bestellungtabelle.php">Shop Bestellungen</a></li>
-        <li><a href="produkthinzufugen.php">Shop Produkt Hinzufügen </a></li>
+        <li><a href="produktliste.php">Produktliste</a></li>
+        <!-- <li><a href="bestellungtabelle.php">Shop Bestellungen</a></li> -->
+        <li><a href="produkthinzufugen.php">Produkt Hinzufügen </a></li>
       </ul>
     </li>
 

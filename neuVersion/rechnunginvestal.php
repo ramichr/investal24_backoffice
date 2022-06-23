@@ -2,15 +2,18 @@
 include "includes/dbh.inc.php";
 
 
-$sql1 = "SELECT * FROM `rechnung` WHERE gastId != '';";
+$sql1 = "SELECT * FROM `rechnung` AS r INNER JOIN `gaste` AS g
+ON r.`gastUid` = g.`gastUid`";
 $result1 = mysqli_query($conn, $sql1);
 
 
-$sql2 = "SELECT * FROM `rechnung` WHERE kundenId != '';";
+$sql2 = "SELECT * FROM `rechnung` AS r INNER JOIN `kunden` AS k 
+ON r.`kundenId` = k.`kundenId`";
 $result2 = mysqli_query($conn, $sql2);
 
 
-$sql3 = "SELECT * FROM `rechnung` WHERE gKundenId != '';";
+$sql3 = "SELECT * FROM `rechnung` AS r INNER JOIN `gKunden` AS gk
+ON r.`gKundenId` = gk.`gKundenId`";
 $result3 = mysqli_query($conn, $sql3);
 
 ?>
@@ -97,6 +100,7 @@ $result3 = mysqli_query($conn, $sql3);
                         <th>ID Nr.</th>
                         <th>ID</th>
                         <th>Rechnung Nr.</th>
+                        <th>Vorname / Nachname</th>
                         <th>Type </th>
                         <th>Datum</th>
                         <th>G.Betrag</th>
@@ -106,8 +110,9 @@ $result3 = mysqli_query($conn, $sql3);
                       <?php while ($row = mysqli_fetch_assoc($result1)) { ?>
                       <tr>
                         <td><?= $row['rechnungId'] ?></td>
-                        <td>Gast: <?= $row['gastId'] ?></td>
+                        <td>Gast: <?= $row['gastUid'] ?></td>
                         <td><?= $row['rechnungNum'] ?></td>
+                        <td><?= $row['gastVorname'] . ' / ' . $row['gastNachname'] ?></td>
                         <td><?= $row['rechnungArt'] ?></td>
                         <td><?= $row['rechnungDatum'] ?></td>
                         <td><strong><?= $row['rechnungBetrag'] ?> €</strong></td>
@@ -125,6 +130,7 @@ $result3 = mysqli_query($conn, $sql3);
                         <td><?= $row['rechnungId'] ?></td>
                         <td>Kunde: <?= $row['kundenId'] ?></td>
                         <td><?= $row['rechnungNum'] ?></td>
+                        <td><?= $row['vorname'] . ' / ' . $row['nachname'] ?></td>
                         <td><?= $row['rechnungArt'] ?></td>
                         <td><?= $row['rechnungDatum'] ?></td>
                         <td><strong><?= $row['rechnungBetrag'] ?> €</strong></td>
@@ -143,6 +149,7 @@ $result3 = mysqli_query($conn, $sql3);
                         <td><?= $row['rechnungId'] ?></td>
                         <td>Geschäftkunde: <?= $row['gKundenId'] ?></td>
                         <td><?= $row['rechnungNum'] ?></td>
+                        <td><?= $row['gkVorname'] . ' / ' . $row['gkNachname'] ?></td>
                         <td><?= $row['rechnungArt'] ?></td>
                         <td><?= $row['rechnungDatum'] ?></td>
                         <td><strong><?= $row['rechnungBetrag'] ?> €</strong></td>

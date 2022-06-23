@@ -70,61 +70,56 @@
               </div>
               <div class="card-body">
                 <div class="form-validation">
-                  <form class="form-valide">
+                  <form action="includes/new-produkt.inc.php" method="POST" enctype="multipart/form-data">
                     <div class="row">
                       <div class="col-xl-6">
                         <div class="form-group row">
-                          <label class="col-lg-4 col-form-label" for="val-username">Produkt Name
+                          <label class="col-lg-4 col-form-label">Produkt Name
                             <span class="text-danger">*</span>
                           </label>
                           <div class="col-lg-6">
-                            <input type="text" class="form-control" id="val-username" name="val-username"
-                              placeholder="Produkt Name">
+                            <input type="text" class="form-control" name="produktName" placeholder="Produkt Name">
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label class="col-lg-4 col-form-label" for="val-email">Produkt referenz <span
-                              class="text-danger">*</span>
+                          <label class="col-lg-4 col-form-label">Produkt referenz <span class="text-danger">*</span>
                           </label>
                           <div class="col-lg-6">
-                            <input type="text" class="form-control" id="val-email" name="val-email" placeholder="S-052">
+                            <input type="text" class="form-control" name="referenz" placeholder="S-052">
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label class="col-lg-4 col-form-label" for="val-password">Gewicht
+                          <label class="col-lg-4 col-form-label">Gewicht
                             <span class="text-danger">*</span>
                           </label>
                           <div class="col-lg-6">
-                            <input type="password" class="form-control" id="val-password" name="val-password"
-                              placeholder="0.0 g">
+                            <input type="text" class="form-control" name="gewicht" placeholder="0.0 g">
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label class="col-lg-4 col-form-label" for="val-confirm-password">Inventor <span
-                              class="text-danger">*</span>
+                          <label class="col-lg-4 col-form-label">Inventor <span class="text-danger">*</span>
                           </label>
                           <div class="col-lg-6">
-                            <input type="password" class="form-control" id="val-confirm-password"
-                              name="val-confirm-password" placeholder="..inventor">
+                            <input type="text" class="form-control" name="inventor" placeholder="..inventor">
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label class="col-lg-4 col-form-label" for="val-suggestions">Produnkt Beschreibung : <span
+                          <label class="col-lg-4 col-form-label">Produkt Beschreibung : <span
                               class="text-danger">*</span>
                           </label>
                           <div class="col-lg-6">
-                            <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="10"
-                              placeholder=".. Produnkt Beschreibung :"></textarea>
+                            <textarea class="form-control" name="beschreibung" rows="10"
+                              placeholder=".. Produkt Beschreibung :"></textarea>
                           </div>
                         </div>
                       </div>
                       <div class="col-xl-6">
                         <div class="form-group row">
-                          <label class="col-lg-4 col-form-label" for="val-skill">Kategorie
+                          <label class="col-lg-4 col-form-label">Kategorie
                             <span class="text-danger">*</span>
                           </label>
                           <div class="col-lg-6">
-                            <select class="form-control default-select" id="val-skill" name="val-skill">
+                            <select class="form-control default-select" name="kategorie">
                               <option value="">bitte wählen</option>
                               <option value="Gold">Gold</option>
                               <option value="Silber">Silber</option>
@@ -134,12 +129,12 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label class="col-lg-4 col-form-label" for="val-suggestions">Produnkt Beschreibung : <span
+                          <label class="col-lg-4 col-form-label" for="val-suggestions">Zusatzinformationen: <span
                               class="text-danger">*</span>
                           </label>
                           <div class="col-lg-6">
-                            <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="5"
-                              placeholder=".. Produnkt Beschreibung :"></textarea>
+                            <textarea class="form-control" id="val-suggestions" name="zusatzInfos" rows="5"
+                              placeholder=".. Zusatzinformationen :"></textarea>
                           </div>
                         </div>
 
@@ -149,7 +144,7 @@
 
                       <div class="input-group mb-3">
                         <div class="custom-file">
-                          <input type="file" class="custom-file-input">
+                          <input type="file" name="images[]" class="custom-file-input" readonly multiple>
                           <label class="custom-file-label">Choose file</label>
                         </div>
                         <div class="input-group-append">
@@ -160,7 +155,7 @@
 
                       <div class="form-group row">
                         <div class="col-lg-12 ml-auto">
-                          <button type="submit" class="btn btn-primary">hinzufügen</button>
+                          <button type="submit" name="submit" class="btn btn-primary">hinzufügen</button>
                         </div>
                       </div>
 
