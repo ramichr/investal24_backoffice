@@ -13,7 +13,7 @@
         </a>
         <ul aria-expanded="false">
           <li><a href="Geshaftkundenliste.php">Geschäftskunden Anfrage</a></li>
-          <li><a href="#">Vermittler Anfrage</a></li>
+          <li><a href="Vermittlerliste.php">Vermittler Anfrage</a></li>
           <li><a href="rechnunginvestal.php">Rechnung verwalten</a></li>
           <li><a href="FixierungNadir.php">Nadir Fixierung</a></li>
 

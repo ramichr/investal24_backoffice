@@ -36,6 +36,23 @@ function deleteGK($conn, $gKundenId)
   return $result;
 };
 
+function updateV($conn, $vermittlerId, $BonusProzent)
+{
+  $sql = "UPDATE `vermittler` SET `vBonusProzent` = '$BonusProzent' , `vStatus` = 'aktiv' WHERE vermittlerId = '$vermittlerId';";
+
+  $result = mysqli_query($conn, $sql);
+
+  return $result;
+};
+
+function deleteV($conn, $vermittlerId)
+{
+  $sql = "DELETE FROM `vermittler` WHERE vermittlerId = '$vermittlerId';";
+
+  $result = mysqli_query($conn, $sql);
+
+  return $result;
+};
 
 function sendEmail($reciever, $subject, $template,)
 {
